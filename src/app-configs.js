@@ -41,8 +41,8 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://f48b8368b274490db3e4eaa01ba2b36b@sentry.lumigame.com/6",
-        logIdentifier: "turbo-big-small",
+        sentryUrl: "https://ee01829823f0487f85bb20b7bdb99a6f@sentry.lumigame.com/8",
+        logIdentifier: "turbo-odd-even",
         env: "DEV",
     },
     authenticateSettings: {

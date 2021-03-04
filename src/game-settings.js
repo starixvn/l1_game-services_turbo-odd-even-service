@@ -1,12 +1,12 @@
 export default {
     id: 1,
-    name: "TXTurbo",
+    name: "OETurbo",
     durations: {
         wholeRound: 36,
         placingBets: 30,
         balancingBetTime: 3,
         lockingBet: 5,
     },
-    choices: ["big", "small"],
-    choicesMapper: { big: 1, small: 2 },
+    choices: ["odd", "even"],
+    choicesMapper: { odd: 1, even: 2 },
 };

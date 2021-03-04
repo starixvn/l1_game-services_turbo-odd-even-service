@@ -24,4 +24,4 @@ const Schema = new mongoose.Schema({
     time: { type: Date, default: new Date() },
 });
 
-export const TurboBigSmallRounds = mongoose.model("TXTurbo_phien", Schema);
+export const TurboOddEvenRounds = mongoose.model("ChanLeTurbo_phien", Schema);

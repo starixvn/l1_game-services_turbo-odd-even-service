@@ -23,5 +23,5 @@ const bet = {
     totalAmount: { type: Number, default: 0 },
 };
 
-export const TurboBigSmallBets = mongoose.model("TXTurbo_one", new mongoose.Schema(bet));
-export const TurboBigSmallBetLogs = mongoose.model("TXTurbo_cuoc", new mongoose.Schema(betLog));
+export const TurboOddEvenBets = mongoose.model("ChanLeTurbo_one", new mongoose.Schema(bet));
+export const TurboOddEvenBetLogs = mongoose.model("ChanLeTurbo_cuoc", new mongoose.Schema(betLog));
