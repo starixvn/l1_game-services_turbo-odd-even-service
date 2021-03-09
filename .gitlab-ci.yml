@@ -1,9 +1,4 @@
-variables:
-  SERVICE_WORKING_PATH: /l1/turbo-odd-even-service/
-  SERVICE_NAME: l1-turbo-odd-even-service
-  DOCKER_IMAGE_PATH: l1/game-services/turbo-odd-even-service
-  
 include:
-  - project: "ci/luminet/common-ci"
-    ref: L1
-    file: "game-service-nodejs-ci/gitlab-ci.yml"
+  - project: "ci/repos-ci/pentagon_l1_turbo_odd_even_service"
+    ref: master
+    file: "gitlab-ci.yml"
