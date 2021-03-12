@@ -1,8 +1,8 @@
 {
-    "name": "turbo-big-small-service",
+    "name": "turbo-odd-even-service",
     "version": "1.0.0",
     "main": "./src/app.js",
-    "repository": "https://git3.nexdev.net/l1/game-services/turbo-big-small-service.git",
+    "repository": "https://git3.nexdev.net/l1/game-services/turbo-odd-even-service.git",
     "author": "pentagon",
     "license": "MIT",
     "type": "module",

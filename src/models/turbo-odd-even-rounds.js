@@ -11,8 +11,8 @@ const resultSchema = new mongoose.Schema(
 
 const settlementResultSchema = new mongoose.Schema(
     {
-        big: { type: Boolean, default: false },
-        small: { type: Boolean, default: false },
+        odd: { type: Boolean, default: false },
+        even: { type: Boolean, default: false },
     },
     { _id: false }
 );
