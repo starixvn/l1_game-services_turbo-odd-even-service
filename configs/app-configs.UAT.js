@@ -1,9 +1,9 @@
 export default {
-    hostingPort: 7001,
+    hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://10.2.189.51:7300",
-        authUrl: "http://10.2.189.51:7303",
+        apiUrl: "http://l1_game_api_uat:5000",
+        authUrl: "http://l1_auth_api_uat:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -14,14 +14,15 @@ export default {
         enabledApiLogs: true,
     },
     mainServerApiSettings: {
-        url: "http://10.2.189.51:7777/uat/main/api",
+        url: "http://l1_games_server_uat:5000/api",
         auth: {
-            url: "http://10.2.189.51:7303",
+            url: "http://l1_auth_api_uat:5000",
             id: "game-services",
             secret: "gameservices@20luminet&",
         },
         requestTimeout: 10000,
         useAuthenticate: true,
+        perMessageDeflate: false,
     },
     socketOptions: {
         pingInterval: 60 * 1000,
@@ -40,8 +41,8 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://82639a7dd711457c994b1a5326d796bc@10.99.99.187:800/225",
-        logIdentifier: "big-small",
+        sentryUrl: "http://d28c27453eed4aea91c155ae6bf82d0f@10.99.99.187:800/251",
+        logIdentifier: "turbo-odd-even",
         env: "UAT",
     },
     authenticateSettings: {
