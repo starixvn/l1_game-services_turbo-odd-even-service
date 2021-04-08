@@ -20,7 +20,7 @@ export class TurboOddEvenRoundQuery extends RoundQuery {
             if (betLog.bet) {
                 const convertedBet = {
                     amount: betLog.bet,
-                    choice: betLog.select ? "big" : "small",
+                    choice: betLog.select ? "even" : "odd",
                     refund: betLog.tralai,
                 };
                 return { ...betLog, ...convertedBet };

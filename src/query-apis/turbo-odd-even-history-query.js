@@ -5,7 +5,7 @@ export class TurboOddEvenHistoryQuery extends Core.QueryApis.HistoryQuery {
         if (bet.bet) {
             const convertedBet = {
                 amount: bet.bet,
-                choice: bet.select ? "big" : "small",
+                choice: bet.select ? "even" : "odd",
                 refund: bet.tralai,
             };
             return { ...bet, ...convertedBet };
@@ -19,7 +19,7 @@ export class TurboOddEvenHistoryQuery extends Core.QueryApis.HistoryQuery {
             if (betLog.bet) {
                 const convertedBet = {
                     amount: betLog.bet,
-                    choice: betLog.select ? "big" : "small",
+                    choice: betLog.select ? "even" : "odd",
                     refund: betLog.tralai,
                 };
                 return { ...betLog, ...convertedBet };
