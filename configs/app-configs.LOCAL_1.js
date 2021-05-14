@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://ee01829823f0487f85bb20b7bdb99a6f@sentry.lumigame.com/8",
+        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
         logIdentifier: "turbo-odd-even",
         env: "LOCAL-1",
     },
