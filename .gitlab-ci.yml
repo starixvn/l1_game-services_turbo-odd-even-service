@@ -1,3 +1,6 @@
+variables:
+  SMOKE_PRODUCT_NAME: TurboOddEven
+
 include:
   - project: "ci/repos-ci/pentagon_l1_turbo_odd_even_service"
     ref: master
