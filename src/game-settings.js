@@ -2,7 +2,7 @@ export default {
     id: 6,
     name: "OETurbo",
     durations: {
-        wholeRound: 36,
+        wholeRound: 37,
         placingBets: 30,
         balancingBetTime: 3,
         lockingBet: 5,
