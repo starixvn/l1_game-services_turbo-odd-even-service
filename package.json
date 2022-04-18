@@ -7,7 +7,8 @@
     "license": "MIT",
     "type": "module",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest --testPathPattern=tests/unit-tests/",
+        "test-coverage": "jest --collect-coverage --testPathPattern=tests/unit-tests/",
         "dev": "nodemon --es-module-specifier-resolution=node --watch ./src ./src/app.js",
         "debug": "nodemon --es-module-specifier-resolution=node --watch ./ --inspect ./src/app.js",
         "prod": "node --max-old-space-size=8192 --es-module-specifier-resolution=node ./src/app.js",
@@ -32,11 +33,28 @@
         "husky": "^4.2.5",
         "install": "^0.13.0",
         "sc-semantic-release": "^1.1.0",
-        "semantic-release": "^17.1.1"
+        "semantic-release": "^17.1.1",
+        "jest": "^26.6.3",
+        "jest-extended": "^0.11.5",
+        "jest-junit": "^13.0.0",
+        "jest-micro-auto-stub": "^1.0.6",
+        "jest-sonar-reporter": "^2.0.0",
+        "@types/jest": "^26.0.20",
+        "babel-jest": "^26.6.3",
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.12.11"
     },
     "husky": {
         "hooks": {
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
+    },
+    "jestSonar": {
+        "reportPath": "reports",
+        "reportFile": "test-reporter.xml",
+        "indent": 4
+    },
+    "jest": {
+        "testResultsProcessor": "jest-junit"
     }
 }

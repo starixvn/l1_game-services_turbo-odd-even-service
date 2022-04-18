@@ -1,5 +1,6 @@
 import { asClass, asValue } from "awilix";
 import { ContainerRegistry } from "sc-pool-betting-game-base";
+import OddEvenPlaceBetConsumer from "./consumers/odd-even-place-bet-consumer";
 
 import { TurboOddEvenGameCron } from "./crons";
 import { TurboOddEvenBetLogs, TurboOddEvenBets, TurboOddEvenRounds } from "./models";
@@ -30,6 +31,14 @@ export default class TurboOddEvenContainerRegistry extends ContainerRegistry {
 
         this.container.register({
             gameCron: asClass(TurboOddEvenGameCron).singleton().proxy(),
+        });
+    }
+
+    registerConsumers() {
+        super.registerConsumers();
+
+        this.container.register({
+            placeBetConsumer: asClass(OddEvenPlaceBetConsumer).singleton(),
         });
     }
 }
