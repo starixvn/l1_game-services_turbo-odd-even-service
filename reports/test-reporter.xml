@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="D:\Nexcel\Luminet\game-services\turbo-odd-even-service\tests\unit-tests\consumers\odd-even-place-bet-consumer.test.js">
+        <testCase name="composeBettingTimeValidationCriteria when not enabled - return invalid bet" duration="2"/>
+        <testCase name="composeBettingTimeValidationCriteria when round id different - return invalid bet" duration="1"/>
+        <testCase name="composeBettingTimeValidationCriteria when shaking plate time - return cannotPlaceBet" duration="0"/>
+        <testCase name="composeBettingTimeValidationCriteria when locking time - return placeBetNextRound" duration="1"/>
+        <testCase name="composeBettingTimeValidationCriteria when settle time - return placeBetNextRound" duration="0"/>
+    </file>
+</testExecutions>
