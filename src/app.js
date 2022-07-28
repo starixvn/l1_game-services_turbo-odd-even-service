@@ -2,7 +2,7 @@ import { Core } from "sc-game-base";
 import { GameData } from "sc-pool-betting-game-base";
 
 import appConfigs from "./app-configs";
-import TurboOddEvenContainerRegistry from "./container-registry";
+import TurboOddEvenContainerRegistry from "./turbo-odd-even-container-registry";
 import gameSettings from "./game-settings";
 import { random } from "./helpers";
 import { getSettlementResult } from "./settlement-rule";
