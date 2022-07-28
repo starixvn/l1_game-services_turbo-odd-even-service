@@ -1,6 +1,8 @@
 import Chance from "chance";
 import Random from "random";
-import RandomJS from "random-js";
+import { Random as RandomJS, MersenneTwister19937 } from "random-js";
+import _ from "lodash";
+import randomInteger from "random-int";
 
 const random1 = () => {
     return Math.floor(Math.random() * 6) + 1;
@@ -20,15 +22,28 @@ const random4 = () => {
 };
 
 const random5 = () => {
-    const random = new RandomJS.Random(MersenneTwister19937.autoSeed());
-    return random.integer(1, 6);
+    const randomEngine = new RandomJS(MersenneTwister19937.autoSeed());
+    return randomEngine.integer(1, 6);
 };
 
-const randomFunctions = [random1, random2, random3, random4, random5];
+const random6 = () => {
+    return _.random(1, 6);
+};
 
-export const random = () => {
-    const selectedRandomMethodIndex = Math.floor(Math.random() * (randomFunctions.length - 1));
-    const randomFunction = randomFunctions[selectedRandomMethodIndex];
+function random7() {
+    return randomInteger(1, 6);
+}
+
+const randomModes = {
+    1: [random1, random2, random3],
+    2: [random4, random5],
+    3: [random6, random7],
+};
+
+export const random = (randomMode) => {
+    const chance = new Chance();
+    const randomFunctions = randomModes[randomMode] ?? randomModes[1];
+    const randomFunction = chance.pickone(randomFunctions);
 
     return randomFunction();
 };
