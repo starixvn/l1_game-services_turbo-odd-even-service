@@ -2,15 +2,15 @@ import { Core } from "sc-game-base";
 import { GameData } from "sc-pool-betting-game-base";
 
 import appConfigs from "./app-configs";
-import TurboOddEvenContainerRegistry from "./container-registry";
+import TurboOddEvenContainerRegistry from "./turbo-odd-even-container-registry";
 import gameSettings from "./game-settings";
 import { random } from "./helpers";
 import { getSettlementResult } from "./settlement-rule";
 
-const generateResult = () => {
-    const dice1 = random();
-    const dice2 = random();
-    const dice3 = random();
+const generateResult = (randomMode) => {
+    const dice1 = random(randomMode);
+    const dice2 = random(randomMode);
+    const dice3 = random(randomMode);
 
     return { dice1, dice2, dice3 };
 };
