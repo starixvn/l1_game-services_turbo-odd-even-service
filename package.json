@@ -16,13 +16,13 @@
         "stats": "nodemon --es-module-specifier-resolution=node --watch ./tests ./tests/result-statistic.js"
     },
     "dependencies": {
-        "random-int": "^3.0.0",
-        "lodash": "^4.17.19",
         "chance": "^1.1.7",
+        "lodash": "^4.17.19",
         "nodemon": "^2.0.4",
         "random": "^2.2.0",
+        "random-int": "^3.0.0",
         "random-js": "^2.1.0",
-        "sc-pool-betting-game-base": "2.4.5-beta.0"
+        "sc-pool-betting-game-base": "2.4.5-beta.1"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
