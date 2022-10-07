@@ -22,7 +22,7 @@ const Schema = new mongoose.Schema({
     result: resultSchema,
     settlementResult: settlementResultSchema,
     time: { type: Date, default: new Date() },
-    exchangeRateId: { type: Number, require: true },
+    exchangeRateId: { type: Number, required: true },
 });
 
 export const TurboOddEvenRounds = mongoose.model("ChanLeTurbo_phien", Schema);

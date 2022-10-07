@@ -2,19 +2,19 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_local_1:5000",
-        authUrl: "http://l1_auth_api_local_1:5000",
+        apiUrl: "http://l1_game_api_prod:5000",
+        authUrl: "http://l1_auth_api_prod:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
         useAuthenticate: true,
-        requestTimeout: 10000,
         placeBetTimeout: 4000,
+        requestTimeout: 10000, // 10s
         enabledApiLogs: true,
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_local_1:5000",
+        url: "http://l1_auth_api_prod:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -22,7 +22,7 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_local_1:5000",
+        url: "http://l1_user_service_prod:5000",
     },
     socketOptions: {
         pingInterval: 60 * 1000,
@@ -33,7 +33,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:17101/?replicaSet=L1pLocal",
+        url: "mongodb://lmn_backend:M7K4ttH%2AtZ3ml%3F%29%7CA%5DjN4%3FLBhwF%266IO%3C@10.99.99.54:27101,10.99.99.53:27102/?replicaSet=SabaMain&appName=TurboOddEven",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -42,12 +42,25 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
+        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@10.2.189.50:9009/8",
         logIdentifier: "turbo-odd-even",
-        env: "LOCAL-1",
+        env: "PROD",
     },
-    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     enableCorsWs: true,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games1.lumigame.com", "https://l1-admin1.lumigame.com"],
-    enableMsgpackParser: false,
+    corsUrls: [
+        "http://sabagame.com",
+        "http://www.sabagame.com",
+        "https://sabagame.com",
+        "https://www.sabagame.com",
+        "https://www.gamesaba.com",
+        "https://gamesaba.com",
+        "http://www.gamesaba.com",
+        "http://gamesaba.com",
+        "http://admg.sabagame.com",
+        "https://admg.sabagame.com",
+        "http://adm.sabagame.com",
+        "https://adm.sabagame.com",
+    ],
+    enableMsgpackParser: true,
 };

@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_local_2:5000",
-        authUrl: "http://l1_auth_api_local_2:5000",
+        apiUrl: "http://l2_game_api_local_1:5000",
+        authUrl: "http://l2_auth_api_local_1:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -14,7 +14,7 @@ export default {
         enabledApiLogs: true,
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_local_2:5000",
+        url: "http://l2_auth_api_local_1:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -22,7 +22,7 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_local_2:5000",
+        url: "http://l2_user_service_local_1:5000",
     },
     socketOptions: {
         pingInterval: 60 * 1000,
@@ -33,7 +33,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:27105/?replicaSet=L1ppLocal",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:37104/?replicaSet=L2pLocal&appName=TurboOddEven",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -42,11 +42,18 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
+        sentryUrl: "https://acb36eb835d948d68c1aad9873754d51@sentry.lumigame.com/27",
         logIdentifier: "turbo-odd-even",
-        env: "LOCAL-2",
+        env: "LOCAL_1",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: false,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games2.lumigame.com", "https://l1-admin2.lumigame.com"],
+    enableCorsWs: true,
+    corsUrls: [
+        "http://localhost:7456",
+        "http://l2-games1.lumigame.com",
+        "https://l2-games1.lumigame.com",
+        "http://l2-admin1.lumigame.com",
+        "https://l2-admin1.lumigame.com",
+        "http://localhost:7000",
+    ],
 };

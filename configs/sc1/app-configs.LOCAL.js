@@ -2,18 +2,19 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_sit:5000",
-        authUrl: "http://l1_auth_api_sit:5000",
+        apiUrl: "http://l1_game_api_local:5000",
+        authUrl: "http://l1_auth_api_local:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
         useAuthenticate: true,
         requestTimeout: 10000,
+        placeBetTimeout: 4000,
         enabledApiLogs: true,
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_sit:5000",
+        url: "http://l1_auth_api_local:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -21,7 +22,7 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_sit:5000",
+        url: "http://l1_user_service_local:5000",
     },
     socketOptions: {
         pingInterval: 60 * 1000,
@@ -32,27 +33,20 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.187:27301/?replicaSet=SabaSIT",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:27101/?replicaSet=L1Local&appName=TurboOddEven",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
+            auto_reconnect: true,
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.190.51:9009/24",
+        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
         logIdentifier: "turbo-odd-even",
-        env: "SIT",
+        env: "LOCAL",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: [
-        "http://l1sit.sgamesuat.com",
-        "https://l1sit.sgamesuat.com",
-        "https://l1sitadm.sgamesuat.com",
-        "http://l1sitadm.sgamesuat.com",
-        "http://l1sitm.sgamesuat.com",
-        "https://l1sitm.sgamesuat.com",
-    ],
-    enableMsgpackParser: true,
+    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://games.lumigame.com", "https://admin.lumigame.com"],
 };
