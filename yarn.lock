@@ -6113,10 +6113,10 @@ sc-game-base@3.1.1:
     socket.io-msgpack-parser "^3.0.1"
     socket.io-prom-metrics "^1.0.3"
 
-sc-pool-betting-game-base@2.4.7-beta.5:
-  version "2.4.7-beta.5"
-  resolved "http://npm.lumigame.com/sc-pool-betting-game-base/-/sc-pool-betting-game-base-2.4.7-beta.5.tgz#18a77b9aa428dcfcd53ee39eaf20287104d5315c"
-  integrity sha512-LJVri96VsplGUBwZ5THPxQ6uILZVgXMjkrD/JH9FWEQ2il/G30I7CbjA8I+BO5rr9M0xM14vWd6ru6XBM9aFLA==
+sc-pool-betting-game-base@2.4.7:
+  version "2.4.7"
+  resolved "http://npm.lumigame.com/sc-pool-betting-game-base/-/sc-pool-betting-game-base-2.4.7.tgz#3037ad49fb7ed99f4997246db4c6995d8cd218f7"
+  integrity sha512-hzbAUAgnQfUarA3pd4OLgsuqJ57fuQmbO85733GR9J1FJmv0d1mbOk/0EGafHCwmd+ba5EByZSCyznHxba0+NQ==
   dependencies:
     chance "^1.1.7"
     sc-game-base "3.1.1"
