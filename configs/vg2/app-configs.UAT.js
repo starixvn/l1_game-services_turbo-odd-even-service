@@ -56,4 +56,5 @@ export default {
         "https://l2uatm.sgamesuat.com",
     ],
     enableMsgpackParser: true,
+    balancedBotBettingTime: 10,
 };

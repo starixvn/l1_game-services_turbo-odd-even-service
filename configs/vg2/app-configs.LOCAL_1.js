@@ -56,4 +56,5 @@ export default {
         "https://l2-admin1.lumigame.com",
         "http://localhost:7000",
     ],
+    balancedBotBettingTime: 10,
 };

@@ -63,4 +63,5 @@ export default {
         "https://adm.v-gaming.net",
     ],
     enableMsgpackParser: true,
+    balancedBotBettingTime: 10,
 };

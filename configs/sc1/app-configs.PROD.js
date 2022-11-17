@@ -63,4 +63,5 @@ export default {
         "https://adm.sabagame.com",
     ],
     enableMsgpackParser: true,
+    balancedBotBettingTime: 10,
 };
