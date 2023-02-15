@@ -46,15 +46,6 @@ export default {
         env: "UAT",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://l1uat.sgamesuat.com",
-        "https://l1uat.sgamesuat.com",
-        "http://l1uatadm.sgamesuat.com",
-        "https://l1uatadm.sgamesuat.com",
-        "http://l1uatm.sgamesuat.com",
-        "https://l1uatm.sgamesuat.com",
-    ],
     enableMsgpackParser: true,
     balancedBotBettingTime: 10,
 };

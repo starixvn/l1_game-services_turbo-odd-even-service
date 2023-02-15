@@ -47,7 +47,5 @@ export default {
         env: "LOCAL-2",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: false,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games2.lumigame.com", "https://l1-admin2.lumigame.com"],
     balancedBotBettingTime: 10,
 };

@@ -45,15 +45,6 @@ export default {
         env: "SIT",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://l1sit.sgamesuat.com",
-        "https://l1sit.sgamesuat.com",
-        "https://l1sitadm.sgamesuat.com",
-        "http://l1sitadm.sgamesuat.com",
-        "http://l1sitm.sgamesuat.com",
-        "https://l1sitm.sgamesuat.com",
-    ],
     enableMsgpackParser: true,
     balancedBotBettingTime: 10,
 };
