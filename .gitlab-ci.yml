@@ -1,17 +1,10 @@
 variables:
   SMOKE_PRODUCT_NAME: TurboOddEven
-  DOCKER_SLIM: enable
   ENABLE_NODEJS_INTEGRATION_TEST: 'true'
-  NODEJS_INTEGRATION_TEST_IMAGE_VERSION: registry.nexdev.net:5050/docker/node:18.1-buster-slim
-  NODEJS_INTEGRATION_TEST_DB_IMAGE_VERSION: registry.nexdev.net:5050/docker/database/mongo:4.4.8
+  NODEJS_INTEGRATION_TEST_IMAGE_VERSION: hub.lumigame.com/docker-hub/library/node:18.1-alpine
+  NODEJS_INTEGRATION_TEST_DB_IMAGE_VERSION: hub.lumigame.com/docker-hub/library/mongo:4.4.8
 
 include:
-  - project: "ci/repos-ci/pentagon_l1_turbo_odd_even_service"
-    ref: master
-    file: "gitlab-ci.yml"
-  - project: "ci/repos-ci/pentagon_l2_turbo_odd_even_service"
-    ref: master
-    file: "gitlab-ci-mixing.yml"
-  - project: "ci/common-ci"
-    ref: rocketor
-    file: "integration-test/nodejs-integration-test.gitlab-ci.yml"
+  - project: ci/core-cicd
+    ref: main
+    file: luminet.gitlab-ci.yml
