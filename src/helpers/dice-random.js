@@ -35,9 +35,9 @@ function random7() {
 }
 
 const randomModes = {
-    1: [random1, random2, random3],
-    2: [random4, random5],
-    3: [random6, random7],
+    1: [random1, random2, random3, random4],
+    2: [random4, random5, random6, random7],
+    3: [random1, random3, random5, random7],
 };
 
 export const random = (randomMode) => {
