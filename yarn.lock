@@ -2753,9 +2753,9 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
     supports-color "^5.3.0"
 
 chance@^1.1.7:
-  version "1.1.11"
-  resolved "http://npm.lumigame.com/chance/-/chance-1.1.11.tgz#78e10e1f9220a5bbc60a83e3f28a5d8558d84d1b"
-  integrity sha512-kqTg3WWywappJPqtgrdvbA380VoXO2eu9VCV895JgbyHsaErXdyHK9LOZ911OvAk6L0obK7kDk9CGs8+oBawVA==
+  version "1.1.13"
+  resolved "http://npm.lumigame.com/chance/-/chance-1.1.13.tgz#d4ecfd20c5e6799aaf5c2270d7653b32385cd6e3"
+  integrity sha512-V6lQCljcLznE7tUYUM9EOAnnKXbctE6j/rdQkYOHIWbfGQbrzTsAXNW9CdU5XCo4ArXQCj/rb6HgxPlmGJcaUg==
 
 char-regex@^1.0.2:
   version "1.0.2"
@@ -6090,9 +6090,9 @@ quick-lru@^4.0.1:
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
 random-int@^3.0.0:
-  version "3.0.0"
-  resolved "http://npm.lumigame.com/random-int/-/random-int-3.0.0.tgz#69782559c9306c43de1dd174ea616330ef75b749"
-  integrity sha512-QvewnOwigesW2WFyTHiQzR6XUUcSQO/BqmfgRz5N5GpGrKQnTf7ebMz8UtuwaET8IfO1n0wLx8/fHsI8E0Jpow==
+  version "3.1.0"
+  resolved "http://npm.lumigame.com/random-int/-/random-int-3.1.0.tgz#ab096f7106c83cdcea975b0b0d4394417677609e"
+  integrity sha512-h8CRz8cpvzj0hC/iH/1Gapgcl2TQ6xtnCpyOI5WvWfXf/yrDx2DOU+tD9rX23j36IF11xg1KqB9W11Z18JPMdw==
 
 random-js@^2.1.0:
   version "2.1.0"
